@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="séries,categoria, sugestão, contato, feedback"/>
+    <meta name="description" content="contato do site Bi Séries"/>
+    <meta name="author" content="Bianca Souza"/>
+    <meta http-equiv="refresh" contente="10;"/>
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Contato</title>
+</head>
+<body>
+<header>
+    <a href="#" id="logo">Bi Séries</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="Ficção científica.html" target="_blank">Ficção científica</a></li>
+                    <li><a href="Fantasia.html" target="_blank">Fantasia</a></li>
+                    <li><a href="Natureza.html" target="_blank">Natureza</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="corpo">
+    <h1>Contato</h1>
+    <p>
+        Envie sugestão de série, comentário (críticas e elogio) e informação sobre série. 
+    </p>
+    
+    <form action="" method="get" class="form">
+        <fieldset class="dados">
+            <legend><strong>Seus dados</strong></legend>
+            <div class="linha1">
+                <label for="inome" class="ident">Nome:</label>
+                <input type="text" pattern="[A-Za-z]" placeholder="Digite seu nome" id="inome" required/></br></br>
+                <label for="iemail" class="ident">Email:</label>
+                <input type="email" placeholder="Digite seu email" id="iemail" required/></br></br>
+                
+                
+            </div>
+            <div class="linha1">
+                <label for="iestado" class="ident">Estado:</label>
+                <input type="text" pattern="[A-Za-z]" placeholder="Digite seu estado" id="iestado" required/></br></br>
+                <label for="icidade" class="ident">Cidade:</label>
+                <input type="text" pattern="[A-Za-z]" placeholder="Digite sua cidade" id="icidade" required/></br></br>
+            </div>
+        </fieldset>
+        <fieldset class="mensagem">
+            <legend><strong>Sua mensagem</strong></legend>
+            <div class="bloco">
+                <label for="smensagem" class="ident">Tipo:</label>
+                <select id="smensagem">
+                    <option value="Sugestão de série">sugestão de série</option>
+                    <option value="Comentário sobre site">Comentário sobre site</option>
+                    <option value="Informação sobre série">Informação sobre série</option>
+                </select></br></br>
+                <label for="imensagem" class="ident">Mensagem:</label>
+                <textarea  id="imensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea></br></br>
+                <input type="submit" value="enviar" class="bsubmit"/>
+            </div>
+        </fieldset>
+    </form>
+
+</main>
+<footer>
+    <p>Autora: Bianca Maria de Souza</br>
+        Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
